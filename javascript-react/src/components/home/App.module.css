@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1c1c1c;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  background-color: #fffafa;
+}
+
+.exchange__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  height: 100%;
+  position: relative;
+  top: -5%;
+}
+
+.form {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  font-weight: 500;
+  text-align: center;
+}
+
+.label {
+  display: flex;
+}
+
+select {
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+input {
+  padding: 12px 24px;
+  border-radius: 12px;
+
+  margin: 0 0 0 5px;
+}
+
+.swap {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100%;
+  margin: 10px 15px;
+
+  cursor: pointer;
+
+  background-color: #98ff98;
+  border: none;
+}
+
+.list {
+  list-style: none;
+
+  display: grid;
+  width: 250px;
+  gap: 8px;
+}
+
+.exchangeHistory {
+  width: 100%;
+  border-collapse: collapse;
+
+  margin: 10px 0 0 0;
+}
+
+tr {
+  width: 100%;
+  border: 2px solid #1b1116;
+}
+
+th {
+  font-size: 20px;
+  padding: 8px 16px;
+}
+
+td {
+  text-align: center;
+  padding: 6px 12px;
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow: auto;
+  }
+  .exchange__wrapper {
+    margin: 32px 0 0 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .swap {
+    width: 35px;
+    height: 35px;
+
+    margin: 10px 18px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .input {
+    padding: 8px 16px;
+  }
+}
