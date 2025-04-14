@@ -1,0 +1,15 @@
+{
+	"plugins": ["@trivago/prettier-plugin-sort-imports"],
+	"useTabs": true,
+	"bracketSpacing": true,
+	"importOrder": [
+		"<THIRD_PARTY_MODULES>",
+		"^@/components/(.*)$",
+		"^@/ui/(.*)$",
+		"^\\./assets/(.*)$",
+		"^(?!.*\\.css$)(../.*)$",
+		"^(?!.*\\.css$)(./.*)$",
+		".*\\.css$"
+	],
+	"importOrderSeparation": true
+}

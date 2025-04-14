@@ -1,0 +1,16 @@
+.btn {
+  background-color: var(--charcoal-800);
+
+  padding: 12px 24px;
+  border-radius: 12px;
+
+  font-family: var(--font-family);
+  color: var(--pastel-main);
+  cursor: pointer;
+
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  outline: 2px solid var(--yellow-800);
+}

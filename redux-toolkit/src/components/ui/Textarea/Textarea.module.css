@@ -1,0 +1,21 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.textarea {
+  padding: 6px 12px;
+
+  height: 200px;
+  resize: none;
+
+  border: none;
+  border-radius: 12px;
+
+  transition: all 0.3s ease-in;
+}
+
+.textarea:focus {
+  outline: 2px solid var(--yellow-800);
+}
