@@ -1,0 +1,52 @@
+.post {
+  width: 250px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 12px;
+
+  border: 1px solid var(--charcoal-400);
+  border-radius: 12px;
+}
+
+.postCredentials {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.author {
+  font-size: 14px;
+  color: var(--charcoal-400);
+}
+
+.content {
+  margin: 0;
+
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  transition: all 0.3s ease-in;
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: var(--charcoal-400);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--charcoal-800);
+}

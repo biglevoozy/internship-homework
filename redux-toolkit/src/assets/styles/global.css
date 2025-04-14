@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+:root {
+	--font-family: "Roboto Slab", serif;
+	--font-weight: 400;
+
+	--pastel-main: rgba(251, 234, 235, 1);
+	--yellow-main: rgba(254, 231, 21, 1);
+	--yellow-800: rgba(254, 231, 21, 0.8);
+	--charcoal-main: rgba(16, 24, 32, 1);
+	--charcoal-800: rgba(16, 24, 32, 0.8);
+	--charcoal-400: rgba(16, 24, 32, 0.4);
+}
+
+body {
+	font-family: var(--font-family);
+	font-weight: var(--font-weight);
+	background-color: var(--pastel-main);
+}
+
+* {
+	color: var(--charcoal-main);
+}

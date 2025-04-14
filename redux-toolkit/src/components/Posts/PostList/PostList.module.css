@@ -1,0 +1,46 @@
+.header {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.status {
+	font-size: 32px;
+	font-weight: 300;
+}
+
+.postList {
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-items: center;
+	row-gap: 12px;
+
+	margin: 12px 0 0 0;
+	padding: 0;
+}
+
+@media (max-width: 1400px) {
+	.postList {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 1200px) {
+	.postList {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 870px) {
+	.postList {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 580px) {
+	.postList {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
